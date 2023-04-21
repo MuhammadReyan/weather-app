@@ -31,7 +31,7 @@ const showWeather = (data) => {
           <div> <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
           </div>
              <div>
-             <h2> ${data.main.temp} &#8451;</h2>
+             <h2> ${data.main.temp} &#8451</h2>
                <h4>${data.weather[0].main}</h4>
                  </div>`
 
@@ -47,3 +47,11 @@ btn.addEventListener("click", (event) => {
     getWeather(search.value)
 
 })
+
+let loader = document.getElementById('preloader');
+
+
+setInterval(function getWeathe() {
+    loader.style.display = "none"
+}, 2000)
+clearInterval(3000)

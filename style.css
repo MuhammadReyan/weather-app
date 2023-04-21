@@ -64,6 +64,20 @@ h1 {
     z-index: -1;
 }
 
+
+
+
+#preloader {
+    background: black url('/images/f59876d316abc628202df9012706d68f.gif') no-repeat center center;
+    background-size: 25%;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+
+}
+
+
 @media (min-aspect-ratio:16/9) {
     .back-video {
 
