@@ -9,7 +9,7 @@ let btn = document.querySelector(".btn")
 
 
 const getWeather = async (city) => {
-    weather.innerHTML = "<h2> 𓆝 Loading..  𓆟  ;"
+    weather.innerHTML = "<h2> 𓆝 Loading..  𓆟  "
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
     const response = await fetch(url)
     const data = await response.json()
